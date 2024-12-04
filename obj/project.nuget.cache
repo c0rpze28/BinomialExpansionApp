@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "H+LT3d0FZoRjrzfe3L/iu85U4VJyZ64QNcbPGRTm6q3ATL1hnLRFQF+mToB3c4Ut6z2hXg05TbldofRq1jdJFQ==",
+  "success": true,
+  "projectFilePath": "/home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/BinomialExpansionApp.csproj",
+  "expectedPackageFiles": [
+    "/home/c0rpze28/.nuget/packages/atksharp/3.24.24.95/atksharp.3.24.24.95.nupkg.sha512",
+    "/home/c0rpze28/.nuget/packages/cairosharp/3.24.24.95/cairosharp.3.24.24.95.nupkg.sha512",
+    "/home/c0rpze28/.nuget/packages/gdksharp/3.24.24.95/gdksharp.3.24.24.95.nupkg.sha512",
+    "/home/c0rpze28/.nuget/packages/giosharp/3.24.24.95/giosharp.3.24.24.95.nupkg.sha512",
+    "/home/c0rpze28/.nuget/packages/glibsharp/3.24.24.95/glibsharp.3.24.24.95.nupkg.sha512",
+    "/home/c0rpze28/.nuget/packages/gtksharp/3.24.24.95/gtksharp.3.24.24.95.nupkg.sha512",
+    "/home/c0rpze28/.nuget/packages/pangosharp/3.24.24.95/pangosharp.3.24.24.95.nupkg.sha512",
+    "/home/c0rpze28/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.10/microsoft.aspnetcore.app.ref.8.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}
