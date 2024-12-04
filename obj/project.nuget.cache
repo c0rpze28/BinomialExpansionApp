@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2UtwGx1xeIrPzaWIRmyALKerXIxAcAnw0DooTAb8w6Tq7LfxqUrx0i1sflhAyRpKdeuzFoDkdWTOpC+EN8dBvw==",
+  "dgSpecHash": "qMfqWfSGFU1zRr5NcMd9z5BAVcpo8uLkPwz6ibshBu+eKL9WSuBlub3XED4OFJUE9mawokDzMVAzDe6G+RfTzA==",
   "success": true,
   "projectFilePath": "/home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/BinomialExpansionApp.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "/home/c0rpze28/.nuget/packages/giosharp/3.24.24.95/giosharp.3.24.24.95.nupkg.sha512",
     "/home/c0rpze28/.nuget/packages/glibsharp/3.24.24.95/glibsharp.3.24.24.95.nupkg.sha512",
     "/home/c0rpze28/.nuget/packages/gtksharp/3.24.24.95/gtksharp.3.24.24.95.nupkg.sha512",
+    "/home/c0rpze28/.nuget/packages/gtksharp.dependencies/1.1.0/gtksharp.dependencies.1.1.0.nupkg.sha512",
     "/home/c0rpze28/.nuget/packages/microsoft.net.illink.tasks/8.0.10/microsoft.net.illink.tasks.8.0.10.nupkg.sha512",
     "/home/c0rpze28/.nuget/packages/pangosharp/3.24.24.95/pangosharp.3.24.24.95.nupkg.sha512",
     "/home/c0rpze28/.nuget/packages/microsoft.netcore.app.runtime.win-x64/8.0.10/microsoft.netcore.app.runtime.win-x64.8.0.10.nupkg.sha512",

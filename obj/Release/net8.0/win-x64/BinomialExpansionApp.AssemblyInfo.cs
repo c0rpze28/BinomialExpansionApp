@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BinomialExpansionApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1bc5665280ad827002c2536b77985a53b2bd8c78")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+117afcd784d32f062209ba8179ceeaa012876692")]
 [assembly: System.Reflection.AssemblyProductAttribute("BinomialExpansionApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BinomialExpansionApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
