@@ -56,50 +56,6 @@
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.1024.46610"
           }
-        },
-        "native": {
-          "Microsoft.DiaSymReader.Native.amd64.dll": {
-            "fileVersion": "0.0.0.0"
-          },
-          "System.IO.Compression.Native.dll": {
-            "fileVersion": "0.0.0.0"
-          },
-          "clretwrc.dll": {
-            "fileVersion": "0.0.0.0"
-          },
-          "clrgc.dll": {
-            "fileVersion": "0.0.0.0"
-          },
-          "clrjit.dll": {
-            "fileVersion": "0.0.0.0"
-          },
-          "coreclr.dll": {
-            "fileVersion": "0.0.0.0"
-          },
-          "createdump.exe": {
-            "fileVersion": "0.0.0.0"
-          },
-          "hostfxr.dll": {
-            "fileVersion": "0.0.0.0"
-          },
-          "hostpolicy.dll": {
-            "fileVersion": "0.0.0.0"
-          },
-          "mscordaccore.dll": {
-            "fileVersion": "0.0.0.0"
-          },
-          "mscordaccore_amd64_amd64_8.0.1024.46610.dll": {
-            "fileVersion": "0.0.0.0"
-          },
-          "mscordbi.dll": {
-            "fileVersion": "0.0.0.0"
-          },
-          "mscorrc.dll": {
-            "fileVersion": "0.0.0.0"
-          },
-          "msquic.dll": {
-            "fileVersion": "0.0.0.0"
-          }
         }
       },
       "AtkSharp/3.24.24.95": {
