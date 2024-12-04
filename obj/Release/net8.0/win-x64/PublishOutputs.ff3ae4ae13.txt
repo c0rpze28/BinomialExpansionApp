@@ -1,0 +1,2 @@
+/home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/bin/Release/net8.0/win-x64/publish/BinomialExpansionApp.pdb
+/home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/bin/Release/net8.0/win-x64/publish/BinomialExpansionApp.exe
