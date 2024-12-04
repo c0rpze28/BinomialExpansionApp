@@ -3,8 +3,11 @@ Binomial Expansion App with simple GUI
 
 To build this project use dotnet and add GtkSharp.
 
+## Dependencies
+You need to install [GtkSharp Runtime](https://github.com/mono/gtk-sharp/releases/download/2.12.45/gtk-sharp-2.12.45.msi) to run the program
 
-Example:
+
+## Example:
 
 
 
