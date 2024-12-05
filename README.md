@@ -4,7 +4,7 @@ Binomial Expansion App with simple GUI
 To build this project use dotnet8.0+ and add GtkSharp.
 
 ## Dependencies
-You need to install [GtkSharp Runtime](https://github.com/mono/gtk-sharp/releases/download/2.12.45/gtk-sharp-2.12.45.msi) to run the program
+You need to install [.NET](https://dotnet.microsoft.com/en-us/download) 8.0+ and [GtkSharp Runtime](https://github.com/mono/gtk-sharp/releases/download/2.12.45/gtk-sharp-2.12.45.msi) to run the program
 
 
 ## Example:
