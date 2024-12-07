@@ -1,11 +1,11 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
+using Avalonia.Interactivity;
 
 namespace BiCal;
 
 public partial class MainWindow : Window
 {
-    private int _clickCount = 0;
     public MainWindow()
     {
         InitializeComponent();
@@ -16,15 +16,16 @@ public partial class MainWindow : Window
         AvaloniaXamlLoader.Load(this);
     }
 
-    private void OnButtonClick(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+    private void OnExpansionClick(object sender, RoutedEventArgs e)
     {
-        _clickCount++;
-
-        var greetingText = this.FindControl<TextBlock>("greetingText");
-        if (greetingText != null)
-        {
-            greetingText.Text = $"Button Clicked! {_clickCount}";
-        }
-        
+        var binomialExpansionWindow= new BinomialExpansionWindow();
+        binomialExpansionWindow.Show();
+        this.Close();
+    }
+    private void OnCoefficientClick(object sender, RoutedEventArgs e)
+    {
+        var binomialCoefficientWindow = new BinomialCoefficientWindow();
+        binomialCoefficientWindow.Show();
+        this.Close();
     }
 }

@@ -1,0 +1,18 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="450"
+        x:Class="BiCal.BinomialExpansionWindow"
+        Title="Binomial Expansion Calculator" Width="450" Height="400">
+
+    <Grid>
+
+        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="OnBackClick" Margin="10"/>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Binomial Expansion Calculator"/>
+        </StackPanel>
+        
+    </Grid>
+</Window>

@@ -24,5 +24,11 @@ build_property.EnableCodeStyleSeverity =
 [/home/c0rpze28/Documents/Projects/C_sharp/BiCal/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[/home/c0rpze28/Documents/Projects/C_sharp/BiCal/BinomialCoefficientWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/c0rpze28/Documents/Projects/C_sharp/BiCal/BinomialExpansionWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [/home/c0rpze28/Documents/Projects/C_sharp/BiCal/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
