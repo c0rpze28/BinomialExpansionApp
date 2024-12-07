@@ -188,7 +188,6 @@
 /home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/bin/Release/net8.0/win-x64/hostfxr.dll
 /home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/bin/Release/net8.0/win-x64/hostpolicy.dll
 /home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/bin/Release/net8.0/win-x64/mscordaccore.dll
-/home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/bin/Release/net8.0/win-x64/mscordaccore_amd64_amd64_8.0.1024.46610.dll
 /home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/bin/Release/net8.0/win-x64/mscordbi.dll
 /home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/bin/Release/net8.0/win-x64/mscorrc.dll
 /home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/bin/Release/net8.0/win-x64/msquic.dll
@@ -198,7 +197,6 @@
 /home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/obj/Release/net8.0/win-x64/BinomialExpansionApp.AssemblyInfo.cs
 /home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/obj/Release/net8.0/win-x64/BinomialExpansionApp.csproj.CoreCompileInputs.cache
 /home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/obj/Release/net8.0/win-x64/BinomialExpansionApp.sourcelink.json
-/home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/obj/Release/net8.0/win-x64/BinomialExpansionApp.csproj.CopyComplete
 /home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/obj/Release/net8.0/win-x64/BinomialExpansionApp.dll
 /home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/obj/Release/net8.0/win-x64/refint/BinomialExpansionApp.dll
 /home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/obj/Release/net8.0/win-x64/BinomialExpansionApp.pdb
@@ -6378,3 +6376,5 @@
 /home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/bin/Release/net8.0/win-x64/share/themes/Breath-Dark/assets/toolbutton-toggled.png
 /home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/bin/Release/net8.0/win-x64/share/themes/Breath-Dark/assets/tree-header.png
 /home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/bin/Release/net8.0/win-x64/share/themes/Breath-Dark/gtk-3.20/gtk.css
+/home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/bin/Release/net8.0/win-x64/mscordaccore_amd64_amd64_8.0.1124.51707.dll
+/home/c0rpze28/Documents/Projects/C_sharp/BinomialExpansionApp/obj/Release/net8.0/win-x64/Binomial.C7243073.Up2Date
