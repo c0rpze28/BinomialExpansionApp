@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BiCal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ba8525ecbe57db22d25f234b536041c5521b0ef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d9fe78600a9031808119f1fe2fcbdcfd74caf76")]
 [assembly: System.Reflection.AssemblyProductAttribute("BiCal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BiCal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

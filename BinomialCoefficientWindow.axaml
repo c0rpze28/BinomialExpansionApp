@@ -5,14 +5,22 @@
         mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="450"
         x:Class="BiCal.BinomialCoefficientWindow"
         Title="Binomial Coefficient Calculator" Width="450" Height="400">
-    <Grid>
+    <Grid Background="LightBlue">
 
         <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="OnBackClick" Margin="10"/>
 
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Background="#ADD8E6">
             
-            <TextBlock Text="Binomial Coefficient Calculator"/>
+            <TextBlock Text="Enter the Total Power (n):" Margin="10"/>
+            <TextBox Name="PowerInput" Width="250" Margin="10" Watermark="Enter n"/>
 
+            <TextBlock Text="Enter the power of x (r): " Margin="10"/>
+            <TextBox Name="ExponentInput" Width="250" Margin="10" Watermark="Enter r"/>
+            
+            <Button Content="Calculate Coefficient" Name="CalculateButton" Click="OnCalculateClick" HorizontalAlignment="Center" Margin="50,20,50,20"/>
+            <Button Content="Clear" Name="ClearButton" Click="OnClearClick" HorizontalAlignment="Center" Margin="50,10,50,20"/> 
+
+            <TextBlock Name="CoefficientTextBlock" Text="Result will be shown here" Margin="10" FontFamily="Consolas" FontSize="16"/>
         </StackPanel>
     </Grid>
     
