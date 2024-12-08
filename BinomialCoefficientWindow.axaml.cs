@@ -9,7 +9,10 @@ namespace BiCal
         {
             InitializeComponent();
         }
-
+        private void InitializeComponent()
+        {
+            AvaloniaXamlLoader.Load(this);
+        }
         private void OnBackClick(object sender, RoutedEventArgs e)
         {
             var mainWindow = new MainWindow();
