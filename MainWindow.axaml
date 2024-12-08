@@ -5,8 +5,45 @@
         mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="450"
         x:Class="BiCal.MainWindow"
         Title="Binomial Calculator" Width="500" Height="400">
-    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button Content="Binomial Expansion Calculator" HorizontalAlignment="Center" Margin="10" Click="OnExpansionClick"/>
-        <Button Content="Binomial Coefficient" HorizontalAlignment="Center" Margin="10" Click="OnCoefficientClick"/>
+    <Grid 
+    Background="LightBlue">
+    <StackPanel 
+    HorizontalAlignment="Center" 
+    VerticalAlignment="Center"
+    Background="LightBlue">
+        <Border Background="RoyalBlue"
+        BorderBrush="MidnightBlue"
+        BorderThickness="2"
+        CornerRadius="7"
+          BoxShadow="5 5 10 0 DarkGray"
+        Padding="3" Margin="5,5,5,20"> 
+            <Button Content="Binomial Expansion Calculator" 
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Padding="5"
+            Click="OnExpansionClick"
+            FontFamily="Courier New"
+            FontSize="20"
+            Height="60"
+            Width="370"
+            TextElement.Foreground="White"/>
+        </Border>
+        <Border Background="SlateBlue"
+        BorderBrush="MidnightBlue"
+        BorderThickness="2"
+        CornerRadius="7"
+          BoxShadow="5 5 10 0 DarkGray"
+        Padding="3" Margin="5,20,5,5">
+            <Button Content="Binomial Coefficient Calculator" 
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Click="OnCoefficientClick"
+            FontFamily="Courier New"
+            FontSize="19"
+            Height="60"
+            Width="370"
+            TextElement.Foreground="White"/>
+        </Border>
     </StackPanel>
+    </Grid>
 </Window>

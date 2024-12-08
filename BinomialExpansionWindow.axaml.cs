@@ -31,6 +31,16 @@ namespace BiCal
             mainWindow.Show();
             this.Close();
         }
+        private void OnClearClick(object sender, RoutedEventArgs e)
+        {
+            _expressionInput?.Clear();
+            _powerInput?.Clear();
+            if(_expandedFormTextBlock != null && _pascalsTriangleTextBlock != null)
+            {
+                _expandedFormTextBlock.Text = "Result will be shown here";
+                _pascalsTriangleTextBlock.Text="";
+            }
+        }       
 
         private void OnCalculateClick(object sender, RoutedEventArgs e)
         {
