@@ -76,7 +76,7 @@ namespace BiCal
 
             for (int i = 0; i<=power;i++)
             {
-                 int coefficient = GetPascalCoefficient(power, i) * (int)Math.Pow(a, power - i) * (int)Math.Pow(b, i);
+                 long coefficient = GetPascalCoefficient(power, i) * (int)Math.Pow(a, power - i) * (int)Math.Pow(b, i);
                 if (coefficient == 0) continue;
 
                 if (expansion.Length > 0 && coefficient > 0) expansion.Append(" + ");
@@ -121,7 +121,7 @@ namespace BiCal
 
             return triangle.ToString();
         }
-        private int GetPascalCoefficient(int row, int col)
+        private  int GetPascalCoefficient(int row, int col)
         {
             if(col == 0 || col == row)
             {

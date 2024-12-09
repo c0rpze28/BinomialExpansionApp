@@ -4,11 +4,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="600"
         x:Class="BiCal.BinomialExpansionWindow"
-        Title="Binomial Expansion Calculator" Width="500" Height="650">
+        Title="Binomial Expansion Calculator" Width="800" Height="650">
 
-    <Grid 
-    Background="LightBlue">
-
+    <Grid Background="LightBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
         <Border Background="MidnightBlue"
         BorderBrush="RoyalBlue"
         BorderThickness="2"
@@ -31,7 +33,7 @@
         <StackPanel 
         HorizontalAlignment="Center" 
         VerticalAlignment="Center" 
-        Margin="10">
+        Margin="10" Grid.Row="0">
            
 
             <TextBlock 
@@ -98,7 +100,9 @@
                 FontSize="20"
                 TextElement.Foreground="White"/> 
             </Border>
-            
+        </StackPanel>
+        <ScrollViewer Grid.Row="1" Margin="10">
+        <StackPanel>
             <TextBlock 
             Text="Expanded Form:" 
             Margin="0,20,0,5" 
@@ -141,6 +145,6 @@
                 TextElement.Foreground="White"/>
             </Border>
         </StackPanel>
-
+        </ScrollViewer>
     </Grid>
 </Window>

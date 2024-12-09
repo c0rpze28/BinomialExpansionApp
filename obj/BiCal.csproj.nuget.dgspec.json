@@ -53,6 +53,8 @@
               "version": "[11.2.2, )"
             },
             "Avalonia.Diagnostics": {
+              "include": "None",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[11.2.1, )"
             },
@@ -63,6 +65,12 @@
             "Avalonia.Themes.Fluent": {
               "target": "Package",
               "version": "[11.2.1, )"
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.11, )",
+              "autoReferenced": true
             }
           },
           "imports": [
@@ -82,11 +90,19 @@
               "version": "[8.0.11, 8.0.11]"
             },
             {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
               "version": "[8.0.11, 8.0.11]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
               "version": "[8.0.11, 8.0.11]"
             }
           ],
@@ -96,6 +112,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     }
