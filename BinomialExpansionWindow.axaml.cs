@@ -115,7 +115,7 @@ namespace BiCal
                     rowString.Append(coefficient + " ");
                 }
                 string rowFormatted = rowString.ToString().Trim();
-                int spacesToPad = (maxWidth - rowFormatted.Length) / 2;
+                int spacesToPad = Math.Max(0, (maxWidth - rowFormatted.Length) / 2);
                 triangle.AppendLine(new string(' ', spacesToPad) + rowFormatted);
             }
 
