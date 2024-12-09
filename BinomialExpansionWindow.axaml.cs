@@ -3,6 +3,7 @@ using Avalonia.Markup.Xaml;
 using Avalonia.Interactivity;
 using System;
 using System.Text;
+using System.Numerics;
 using System.Text.RegularExpressions;
 
 namespace BiCal
@@ -76,14 +77,14 @@ namespace BiCal
 
             for (int i = 0; i<=power;i++)
             {
-                 long coefficient = GetPascalCoefficient(power, i) * (int)Math.Pow(a, power - i) * (int)Math.Pow(b, i);
+                BigInteger coefficient = GetPascalCoefficient(power, i) * (int)Math.Pow(a, power - i) * (int)Math.Pow(b, i);
                 if (coefficient == 0) continue;
 
                 if (expansion.Length > 0 && coefficient > 0) expansion.Append(" + ");
                 if (coefficient < 0) expansion.Append(" - ");
 
-                if (Math.Abs(coefficient) != 1 || (i == power && string.IsNullOrEmpty(var1)))
-                    expansion.Append(Math.Abs(coefficient));
+                if (BigInteger.Abs(coefficient) != 1 || (i == power && string.IsNullOrEmpty(var1)))
+                    expansion.Append(BigInteger.Abs(coefficient));
 
                 if (!string.IsNullOrEmpty(var1) && power - i > 0)
                 {
@@ -111,17 +112,17 @@ namespace BiCal
 
                 for(int col = 0; col <= row; col++)
                 {
-                    int coefficient = GetPascalCoefficient(row,col);
+                    BigInteger coefficient = GetPascalCoefficient(row,col);
                     rowString.Append(coefficient + " ");
                 }
                 string rowFormatted = rowString.ToString().Trim();
-                int spacesToPad = (maxWidth - rowFormatted.Length) / 2;
+                int spacesToPad = Math.Max(0, (maxWidth - rowFormatted.Length) / 2);
                 triangle.AppendLine(new string(' ', spacesToPad) + rowFormatted);
             }
 
             return triangle.ToString();
         }
-        private  int GetPascalCoefficient(int row, int col)
+        private  BigInteger GetPascalCoefficient(int row, int col)
         {
             if(col == 0 || col == row)
             {
