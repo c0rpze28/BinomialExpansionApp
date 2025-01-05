@@ -37,7 +37,7 @@
            
 
             <TextBlock 
-            Text="Enter Expression (e.g., ax + b or ax + by):"
+            Text="Enter Expression (e.g., (5x+5)^5 or (2x+1y)^3 ):"
             FontFamily="Consolas"
             FontSize="16"/>
             <Border Background="Gainsboro"
@@ -47,23 +47,7 @@
               BoxShadow="5 5 10 0 DarkGray"
             Padding="3" Margin="3">
                 <TextBox x:Name="ExpressionInput" 
-                Watermark="Enter Expression" 
-                Margin="0,5"
-                FontFamily="Consolas"/>
-            </Border>
-            <TextBlock Text="Enter Power:" 
-            Margin="0,10,0,0"
-            TextElement.Foreground="GhostWhite"
-            FontFamily="Consolas"
-            FontSize="16"/>
-            <Border Background="Gainsboro"
-            BorderBrush="Black"
-            BorderThickness="2"
-            CornerRadius="5"
-              BoxShadow="5 5 10 0 DarkGray"
-            Padding="3" Margin="3">
-                <TextBox x:Name="PowerInput" 
-                Watermark="Enter Power" 
+                Watermark="Enter Expression (e.g., (ax+by)^n or (ax+b)^n" 
                 Margin="0,5"
                 FontFamily="Consolas"/>
             </Border>
@@ -94,6 +78,23 @@
                 <Button Content="CLEAR" 
                 Name="ClearButton" 
                 Click="OnClearClick"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontFamily="Consolas"
+                FontSize="20"
+                TextElement.Foreground="White"/> 
+            </Border>
+            <Border Background="MidnightBlue"
+            BorderBrush="RoyalBlue"
+            BorderThickness="2"
+            Width="70"
+            Height="42"
+            CornerRadius="7"
+            BoxShadow="5 5 10 0 DarkGray"
+            Padding="2" Margin="5">
+                <Button Content="COPY" 
+                Name="CopyButton" 
+                Click="OnCopyClick"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 FontFamily="Consolas"
