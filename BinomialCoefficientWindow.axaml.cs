@@ -56,7 +56,7 @@ namespace BiCal
                 if (exponent1 + exponent2 != totalPower)
                 {
                     if(_resultBlock != null){
-                        _resultBlock.Text = "Exponent of x cannot be greater than the total power";
+                        _resultBlock.Text = "Exponent of y cannot be greater than the total power";
                     }
                     return;
                 }
