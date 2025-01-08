@@ -44,67 +44,80 @@ namespace BiCal
                 clipboard?.SetTextAsync(_resultBlock.Text);
             }
         }
-        private void OnCalculateClick(object sender, RoutedEventArgs e)
+         private void OnCalculateClick(object sender, RoutedEventArgs e)
         {
-            try{
+            try
+            {
                 string binomialExpression = _expressionInput?.Text ?? string.Empty;
                 string termExpression = _termInput?.Text ?? string.Empty;
 
                 int totalPower = ExtractPower(binomialExpression);
-                (int exponent1, int exponent2) = ExtractExponents(termExpression);
+                (int exponentX, int exponentY) = ExtractExponents(termExpression);
 
-                if (exponent1 + exponent2 != totalPower)
+                // Validate exponents
+                if (exponentX + exponentY != totalPower)
                 {
-                    if(_resultBlock != null){
-                        _resultBlock.Text = "Exponent of y cannot be greater than the total power";
+                    if (_resultBlock != null)
+                    {
+                        _resultBlock.Text = "The sum of exponents of x and y must equal the total power.";
                     }
                     return;
                 }
-                BigInteger coefficient = CaclulateBinomialCoefficient(totalPower,exponent1);
-                if(_resultBlock != null){
+
+                BigInteger coefficient = CalculateCombination(totalPower, exponentX);
+
+                if (_resultBlock != null)
+                {
                     _resultBlock.Text = $"The coefficient is: {coefficient}";
                 }
             }
-            catch(Exception){
-                if(_resultBlock != null)
+            catch (Exception)
+            {
+                if (_resultBlock != null)
                 {
-                    _resultBlock.Text="Invalid Input";
+                    _resultBlock.Text = "Invalid Input";
                 }
             }
         }
         
-        private BigInteger CaclulateBinomialCoefficient(int n, int k)
+        private BigInteger CalculateCombination(int n, int k)
         {
             return Factorial(n) / (Factorial(k)*Factorial(n-k));
         }
 
-        private int ExtractPower(string expression){
+        private int ExtractPower(string expression)
+        {
             var match = Regex.Match(expression, @"\^\s*(\d+)");
-            if (match.Success){
+            if (match.Success)
+            {
                 return int.Parse(match.Groups[1].Value);
             }
             throw new ArgumentException("Invalid binomial expression. Ensure it is in the form (x + y)^n.");
         }
-        private (int,int) ExtractExponents(string expression){
-            var matches = Regex.Matches(expression, @"\^\s*(\d+)");
-            if (matches.Count==2){
-                int exponent1 = int.Parse(matches[0].Groups[1].Value);
-                int exponent2 = int.Parse(matches[1].Groups[1].Value);
-                return (exponent1, exponent2);
+         private (int, int) ExtractExponents(string expression)
+        {
+            var matches = Regex.Matches(expression, @"x\^\s*(\d+)|y\^\s*(\d+)");
+            if (matches.Count == 2)
+            {
+                int exponentX = int.Parse(matches[0].Groups[1].Value);
+                int exponentY = int.Parse(matches[1].Groups[2].Value);
+                return (exponentX, exponentY);
             }
-            throw new ArgumentException("Invalid term expression. Ensure it is in the form x^a y^b");
+            throw new ArgumentException("Invalid term expression. Ensure it is in the form x^k y^j.");
         }
-        private BigInteger Factorial(int n){
-            if (n == 0 || n==1){
+         private BigInteger Factorial(int n)
+        {
+            if (n == 0 || n == 1)
+            {
                 return 1;
             }
-            
+
             BigInteger result = 1;
-            for(int i=1; i<=n;i++){
+            for (int i = 1; i <= n; i++)
+            {
                 result *= i;
             }
             return result;
-            
         }
     }
 }
